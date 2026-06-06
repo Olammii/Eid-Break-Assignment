@@ -51,7 +51,20 @@ At this stage, the browser converts the calculation done in the layout phase int
 ---
 Understanding these matters for a web developers  because it dictates your site performance, overall user experience.
 
-1. 
+1. understanding the DOM, you understand what JavaScript is actually manipulating. Every querySelector, event listener, or DOM update is operating on this structure of your webpage.
+
+2. Render tree is what the browser actually uses to decide what gets drawn. If something is “in the DOM but not visible,” it likely never reached the render tree such as 
+
+```css
+display: none; // visibility to hiddden
+```
+----
+``` html 
+<head> 
+    <meta>
+```
+3. when trigger layout repeatedly (e.g., in loops or animations), by using Javascript to manipulate the size of some tag, image e.t.c you can cause performance issues like:
+janky scrolling, slow UI updates, frame drops. prefer using opacity and transfom
 
 
 
@@ -73,3 +86,9 @@ TCP requires multiple steps (3-way handshake) to establish a connection, QUIC co
 # Product Thinking
 
 ## 1. How does Semantic HTML help search Engine  understand and rank their content
+
+```<article>``` 
+
+Represent self-contained content which announces article boundaries and intended to be distributable or reuable.
+
+
