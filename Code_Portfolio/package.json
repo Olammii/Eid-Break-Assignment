@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "watch": "tailwindcss -i ./src/input.css -o class-10-11-functions/output.css --watch"
+    "watch": "tailwindcss -i ./src/input.css -o class-10-11-functions/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o class-10-11-functions/output.css"
   },
   "author": "",
   "license": "ISC",

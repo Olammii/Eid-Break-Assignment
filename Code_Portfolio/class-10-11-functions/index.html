@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    
+<body class="bg-gray-500 flex justify-center items-center h-screen">
+    <div class="min-w-96 rounded-2xl bg-black">
+        <div class="display h-30 px-7 py-3 bg-gray-900 rounded-2xl text-right">
+            <div class="preoperation-el text-[#555] text-2xl">0000</div>
+            <div class="currentoperation-el text-[#e8e8e8] text-6xl">00</div>
+        </div>
+        <div class="key text-center grid grid-cols-[repeat(4,1fr)] px-7 py-5  pt-4 gap-2 rounded-b-2xl">
+            <button class="h-15 rounded bg-gray-600 text-red-500 text-2xl">AC</button>
+            <button class="h-15 rounded bg-gray-600 text-red-500 text-2xl">DE</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">!</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl"></button>
+
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl"></button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl"></button>
+            
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl"></button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">%</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">8</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">9</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">*</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">/</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">5</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">6</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">7</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">-</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">1</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">2</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">3</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">+</button>
+
+
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl col-span-2">0</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl">.</button>
+            <button class="h-15 rounded bg-gray-600 text-white text-2xl col-span-2">=</button>
+        </div>
+    </div>
 </body>
 </html>
